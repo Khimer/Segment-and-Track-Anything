@@ -1098,8 +1098,8 @@ def seg_track_app():
                 inputs=[input_img_seq],
             )
     
-    app.queue(concurrency_count=1)
-    app.launch(debug=True, enable_queue=True, share=True)
+    #app.queue(concurrency_count=1)
+    app.queue().launch(debug=True, share=True)
 
 
 if __name__ == "__main__":
